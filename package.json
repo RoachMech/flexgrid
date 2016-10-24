@@ -1,6 +1,6 @@
 {
-  "name": "flexgrid",
-  "version": "0.1.0",
+  "name": "flexgriddle",
+  "version": "1.0.0",
   "description": "A sass mixin library for creating simple grids using flexbox",
   "scripts": {
     "test": "mocha test/test.js"
