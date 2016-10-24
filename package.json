@@ -1,0 +1,25 @@
+{
+  "name": "flexgrid",
+  "version": "0.1.0",
+  "description": "A sass mixin library for creating simple grids using flexbox",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoachMech/flexgrid.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "RoachMech",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RoachMech/flexgrid/issues"
+  },
+  "homepage": "https://github.com/RoachMech/flexgrid#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "sass-true": "^2.0.3"
+  }
+}
