@@ -1,1 +1,36 @@
 @import "true";
+
+@import "../src/flexgrid";
+
+
+@include test-module('Flexgriddle') {
+
+  @include test('container mixin') {
+    @include assert('outputs the correct container') {
+      @include output {
+        @include flexgrid-container(2rem);
+      }
+
+      @include expect {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 -1rem;
+      }
+    }
+  }
+
+  @include test('item mixin') {
+    @include assert('outputs the correct item') {
+      @include output {
+        @include flexgrid-item(5, 2rem);
+      }
+
+      @include expect {
+        flex: 1 1 20%;
+        max-width: 20%;
+        padding: 0 1rem 2rem;
+      }
+    }
+  }
+
+}

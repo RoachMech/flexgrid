@@ -21,7 +21,7 @@ $flexgrid-gutter-base: 2rem !default;
 @mixin flexgrid-container($gutter: $flexgrid-gutter-base) {
   display: flex;
   flex-flow: row wrap;
-  margin: 0 -($gutter/2);
+  margin: 0 (-($gutter/2));
 }
 
 /// Make an item for the grid
@@ -40,5 +40,5 @@ $flexgrid-gutter-base: 2rem !default;
 @mixin flexgrid-item($items-per-row, $gutter: $flexgrid-gutter-base) {
   flex: 1 1 (100%/$items-per-row);
   max-width: (100%/$items-per-row);
-  padding: 0 $gutter/2 $gutter;
+  padding: 0 ($gutter/2) ($gutter);
 }
